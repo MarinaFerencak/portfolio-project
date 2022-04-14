@@ -14,8 +14,10 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/portfolio.css" />
@@ -28,24 +30,30 @@
       src="https://kit.fontawesome.com/a65967d668.js"
       crossorigin="anonymous"
     ></script>
-    <title>Document</title>
+    <meta
+      name="description"
+      content="Marina is a front-end developer based in France. She developed her coding skills through SheCodes workshops."
+    />
+    <title>Marina's projects</title>
   </head>
   <body>
     <div class="container">
       <nav class="d-flex justify-content-between">
-        <a href="/"><img src="images/logo.png" class="logo" alt="logo" /></a>
+        <a href="/" title="Homepage"
+          ><img src="images/logo.png" class="logo" alt="Marina Logo"
+        /></a>
         <ul>
           <li>
-            <a href="/">Home</a>
+            <a href="/" title="Homepage">Home</a>
           </li>
           <li>
-            <a href="/about.html">About</a>
+            <a href="/about.html" title="About Marina">About</a>
           </li>
           <li class="active">
-            <a href="/work.html">Work</a>
+            <a href="/work.html" title="Marina's work">Work</a>
           </li>
           <li>
-            <a href="/contact.html">Contact</a>
+            <a href="/contact.html" title="Contact Marina">Contact</a>
           </li>
         </ul>
       </nav>
@@ -57,8 +65,8 @@
           <div class="col d-none d-lg-block mt-5">
             <img
               src="images/lagos project.png"
-              class="img-fluid rounded"
-              alt="lagos project"
+              class="img-fluid project-image"
+              alt="landing page preview"
             />
           </div>
           <div class="col mt-5">
@@ -72,14 +80,14 @@
               <a
                 href="https://www.shecodes.io/workshops/shecodes-basics-debd336d-bcd6-4bef-993b-33c824480858/projects/613541"
                 class="btn btn-branding-outline"
-                target="_blank"
-                >Visit Page</a
+                target="_blank" title="Visit Lagos landing page"
+                >Visit page</a
               >
             </div>
           </div>
         </div>
         <div class="row mb-5">
-          <div class="col">
+          <div class="col mt-3">
             <div class="project-desciption">
               <h2 class="mb-3">Weather App</h2>
               <p class="mb-5 text-muted">
@@ -93,19 +101,49 @@
                 href="https://www.shecodes.io/workshops/shecodes-plus-a9438d66-f87b-4699-8cad-5a5414e42010/projects/700823"
                 class="btn btn-branding-outline"
                 target="_blank"
+                title="Launch the weather app"
                 >Launch App</a
               >
             </div>
           </div>
-          <div class="col d-none d-lg-block">
+          <div class="col d-none d-lg-block mt-3">
             <img
               src="images/weather app.png"
-              class="img-fluid rounded"
-              alt="weather app"
+              class="img-fluid project-image"
+              alt="weather app preview"
             />
           </div>
         </div>
       </div>
+            <footer class="container">
+        <div class="contact-box justify-content-between d-none d-md-flex">
+          <div>
+            <h3>Work Inquiry</h4>
+            <p class="text-muted">Let's work together!</p>
+          </div>
+          <div>
+            <a href="mailto:marina.ferencak25@gmail.com" class="btn btn-branding mt-3" title="Contact Marina">Let's talk here</a>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <a href="mailto:marina.ferencak25@gmail.com" class="email-link" title="Email Marina"
+            >marina.ferencak25@gmail.com</a
+          >
+        </div>
+        <div class="social-links d-flex justify-content-center">
+          <a href="https://www.linkedin.com/in/marina-ferencak/" target="_blank" title="LinkedIn Profile"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/MarinaFerencak?tab=repositories" target="_blank" title="GitHub Profile"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://www.instagram.com/marina.ferencak/?hl=hr" target="_blank" title="Instagram Profile"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
+        <p class="text-center mt-5">This project was coded by Marina Ferenčak and it is <a href="https://github.com/MarinaFerencak/portfolio-project" target="_blank">open-sourced</a>
+          ✌🏽</p>
+      </footer>
     </div>
   </body>
 </html>

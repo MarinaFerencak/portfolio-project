@@ -14,8 +14,10 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/portfolio.css" />
@@ -28,24 +30,30 @@
       src="https://kit.fontawesome.com/a65967d668.js"
       crossorigin="anonymous"
     ></script>
-    <title>Document</title>
+    <meta
+      name="description"
+      content="Marina is a front-end developer based in France. She developed her coding skills through SheCodes workshops."
+    />
+    <title>About Marina</title>
   </head>
   <body>
     <div class="container">
       <nav class="d-flex justify-content-between">
-        <a href="/"><img src="images/logo.png" class="logo" alt="logo" /></a>
+        <a href="/" title="Homepage"
+          ><img src="images/logo.png" class="logo" alt="Marina Logo"
+        /></a>
         <ul>
           <li>
-            <a href="/">Home</a>
+            <a href="/" title="Homepage">Home</a>
           </li>
           <li class="active">
-            <a href="/about.html">About</a>
+            <a href="/about.html" title="About Marina">About</a>
           </li>
           <li>
-            <a href="/work.html">Work</a>
+            <a href="/work.html" title="Marina's work">Work</a>
           </li>
           <li>
-            <a href="/contact.html">Contact</a>
+            <a href="/contact.html" title="Contact Marina">Contact</a>
           </li>
         </ul>
       </nav>
@@ -55,29 +63,55 @@
         <div class="col-lg-6">
           <div class="content">
             <h1 class="mb-5">Hi I am Marina Ferenčak</h1>
-            <h2 class="secondary-heading mb-5">
+            <h2 class="secondary-heading mb-4">
               Front-end developer based in France
             </h2>
             <p class="mb-4">
-              I am a front-end developer in the making with a passion for
-              eye-catching websites and applications. I bring my projects to
-              life using HTML, CSS, JavaScript, API and I progressively keep
-              expanding my skillset. Curently, my work revolves around creating
-              beautiful bundles for retails all over the world. This is also
-              what inspired me to start coding and develop my skills. When my
-              computer is off, I love cooking, traveling and cats.
+              I am  a Senior Category Specialist at an award winning tech company that provides product bundling technology to retailers. Working with bundle technology is what inspired me to start coding and develop my skills. <br>
+              Today, I am also a front-end developer in the making, with a passion for
+              eye-catching websites and applications. <br>
+              When my computer is off, I love cooking, traveling and cats. 
             </p>
-            <a href="#" class="btn btn-branding">Check out my projects</a>
-          </div>
+            <a href="/work.html" class="btn btn-branding" title="View Marina's projects">Check out my projects</a>
+          </div> 
         </div>
         <div class="col-lg-6">
           <img
             src="images/marina.jpeg"
-            alt="my picture"
+            alt="Picture of Marina"
             class="img-fluid marina"
           />
         </div>
       </div>
+            <footer class="container">
+        <div class="contact-box justify-content-between d-none d-md-flex">
+          <div>
+            <h3>Work Inquiry</h4>
+            <p class="text-muted">Let's work together!</p>
+          </div>
+          <div>
+            <a href="mailto:marina.ferencak25@gmail.com" class="btn btn-branding mt-3" title="Contact Marina">Let's talk here</a>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <a href="mailto:marina.ferencak25@gmail.com" class="email-link" title="Email Marina"
+            >marina.ferencak25@gmail.com</a
+          >
+        </div>
+        <div class="social-links d-flex justify-content-center">
+          <a href="https://www.linkedin.com/in/marina-ferencak/" target="_blank" title="LinkedIn Profile"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/MarinaFerencak?tab=repositories" target="_blank" title="GitHub Profile"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://www.instagram.com/marina.ferencak/?hl=hr" target="_blank" title="Instagram Profile"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
+        <p class="text-center mt-5">This project was coded by Marina Ferenčak and it is <a href="https://github.com/MarinaFerencak/portfolio-project" target="_blank">open-sourced</a>
+          ✌🏽</p>
+      </footer>
     </div>
   </body>
 </html>
